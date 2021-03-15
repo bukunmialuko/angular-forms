@@ -1,5 +1,7 @@
 <div class="ui raised segment">
     <h2 class="ui header">Demo Form: with custom validations</h2>
+
+
     <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form"
         [class.error]="!myForm.valid && myForm.touched">
 
